@@ -1,7 +1,7 @@
 ## Animal is-a object
 class Animal(object):
     
-    def animalTest():
+    def animalTest(self):
         print("Animals are living members of the animal kingdom which we are very familiar with.")
 
 ## dog is-a animal
@@ -53,19 +53,19 @@ class Employee(Person):
 ## fish is-a object
 class Fish(object):
 
-    def fishFact():
+    def fishFact(self):
         print("Fish have gills instead of lungs and live in the water. Their version of drowning is being on land. Ironic.")
 
 # salmon is-a fish
 class Salmon(Fish):
 
-    def salmonFact():
+    def salmonFact(self):
         print("Salmon must run a gauntlet to get to their breeding grounds because bears love to eat them.")
 
 # halibut is-a fish
 class Halibut(Fish):
 
-    def halubutFact():
+    def halubutFact(self):
         print("Halibut is flat fish that people supposedly like to eat. Idk what it tastes like.")
 
 
@@ -97,3 +97,10 @@ harry = Halibut()
 
 frank.wastedLife()
 mary.hasPet()
+satan.animalTest()
+rover.dogName()
+satan.catName()
+flipper.fishFact()
+crouse.salmonFact()
+harry.halubutFact()
+harry.fishFact()
