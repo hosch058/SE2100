@@ -91,7 +91,7 @@ class CentralCorridor(Scene):
                 the head putting him down, then jump through the 
                 Weapon Armory door.
                 """))
-            return 'the_bridge' # laser_weapon_armory is a bit of a rude room; let's skip it
+            return 'laser_weapon_armory'
         
         else:
             print("DOES NOT COMPUTE!")
@@ -115,6 +115,13 @@ class LaserWeaponArmory(Scene):
         code = f"{randint(1,9)}{randint(1,9)}{randint(1,9)}"
         guess = input("[keypad]> ")
         guesses = 0
+
+        # this room can be a little mean; let's add a way to cheat it
+
+        if guess == "activate cheats":
+            return 'the_bridge'
+        else:
+            pass
 
         while guess != code and guesses < 10:
             print("BZZZZEDDD!")
